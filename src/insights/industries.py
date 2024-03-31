@@ -8,3 +8,5 @@ class ProcessIndustries(ProcessJobs):
 
     def get_unique_industries(self) -> List[str]:
         pass
+
+# Starting
