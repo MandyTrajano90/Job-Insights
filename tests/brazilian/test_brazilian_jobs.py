@@ -5,7 +5,7 @@ from unittest.mock import MagicMock, patch
 def test_brazilian_jobs():
     test_data = [
         {"titulo": "Engenheiro", "salario": "R$5000", "tipo": "Integral"},
-        {"titulo": "Programador", "salario": "R$10000", "tipo": "Meio período"},
+        {"titulo": "Programador", "salario": "R$9000", "tipo": "Meio período"},
     ]
     process_jobs_mock = MagicMock()
     process_jobs_mock.read.return_value = test_data
@@ -17,6 +17,6 @@ def test_brazilian_jobs():
 
     expected_result = [
         {"title": "Engenheiro", "salary": "R$5000", "type": "Integral"},
-        {"title": "Programador", "salary": "R$10000", "type": "Meio período"},
+        {"title": "Programador", "salary": "R$9000", "type": "Meio período"},
     ]
     assert result == expected_result
